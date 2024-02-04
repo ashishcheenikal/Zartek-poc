@@ -11,7 +11,7 @@ export const _stateContext = ({ children }) => {
   const baseURL = import.meta.env.VITE_BASE_API;
   const fetchData = async () => {
     try {
-      const response = await axios.get(baseURL);
+      const response = await axios.get("https://run.mocky.io/v3/f47694b8-4d45-4c30-aed0-dd82bb4025fb");
       console.log(response.data.data);
       setDishData(response.data.data);
       setLoading(false);
